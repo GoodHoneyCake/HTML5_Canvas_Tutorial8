@@ -13,6 +13,7 @@ export class Dialog {
     this.target = new Point();
     this.prevPos = new Point();
     this.downPos = new Point();
+
     this.startPos = new Point();
     this.mousePos = new Point();
     this.centerPos = new Point();

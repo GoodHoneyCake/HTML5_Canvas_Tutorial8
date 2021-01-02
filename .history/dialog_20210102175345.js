@@ -5,7 +5,7 @@ const ROTATE_SPEED = 0.12;
 const MAX_ANGLE = 30;
 const FPS = 1000 / 60;
 const WIDTH = 260;
-const HEIGHT = 260;
+const HEIGHT = 160;
 
 export class Dialog {
   constructor() {

@@ -12,7 +12,7 @@ class App {
     this.curItem = null;
 
     this.items = [];
-    this.total = 5;
+    this.total = 1;
     for (let i = 0; i < this.total; i++) {
       this.items[i] = new Dialog();
     }
@@ -39,7 +39,7 @@ class App {
     this.ctx.shadowOffsetX = 0;
     this.ctx.shadowOffsetY = 3;
     this.ctx.shadowBlur = 6;
-    this.ctx.shadowColor = `rgba(0,0,0,0.5`;
+    this.ctx.shadowColor = `rgba(0,0,0,0.1)`;
 
     this.ctx.lineWidth = 2;
 
@@ -62,23 +62,14 @@ class App {
       this.ctx.strokeStyle = `#ff4338`;
 
       this.ctx.beginPath();
-      this.ctx.arc(this.mousePos.x, this.mousePos.y, 8, 0, Math.PI * 2);
-      this.ctx.fill();
-
-      this.ctx.beginPath();
       this.ctx.arc(
         this.curItem.centerPos.x,
         this.curItem.centerPos.y,
-        8,
+        80,
         0,
         Math.PI * 2
       );
       this.ctx.fill();
-
-      this.ctx.beginPath();
-      this.ctx.moveTo(this.mousePos.x, this.mousePos.y);
-      this.ctx.lineTo(this.curItem.centerPos.x, this.curItem.centerPos.y);
-      this.ctx.stroke();
     }
   }
   onDown(e) {

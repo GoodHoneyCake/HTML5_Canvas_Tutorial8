@@ -12,7 +12,7 @@ class App {
     this.curItem = null;
 
     this.items = [];
-    this.total = 5;
+    this.total = 1;
     for (let i = 0; i < this.total; i++) {
       this.items[i] = new Dialog();
     }
@@ -39,7 +39,7 @@ class App {
     this.ctx.shadowOffsetX = 0;
     this.ctx.shadowOffsetY = 3;
     this.ctx.shadowBlur = 6;
-    this.ctx.shadowColor = `rgba(0,0,0,0.5`;
+    this.ctx.shadowColor = `rgba(0,0,0,0.1)`;
 
     this.ctx.lineWidth = 2;
 
