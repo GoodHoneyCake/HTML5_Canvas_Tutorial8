@@ -38,13 +38,9 @@ class App {
   }
   onDown(e) {
     this.mousePos.x = e.clientX;
-    this.mousePos.y = e.clientY;
   }
 
-  onMove(e) {
-    this.mousePos.x = e.clientX;
-    this.mousePos.y = e.clientY;
-  }
+  onMove(e) {}
 
   onUp(e) {}
 }
