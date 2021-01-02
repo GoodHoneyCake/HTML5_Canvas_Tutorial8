@@ -66,7 +66,7 @@ class App {
       if (item) {
         this.curItem = item;
         const index = this.items.indexOf(item);
-        this.items.push(this.items.splice(index, 1)[0]);
+        this.item.push(this.items.splice(index, 1)[0]);
         break;
       }
     }
